@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
 body {
-  font-family: "Lato",'Raleway';
+  font-family: "Lato";
+  min-width:100vh;
+}
+
+.what h3,
+article h4 {
+  font-family: "Raleway";
 }
 
 header {
@@ -33,6 +39,7 @@ header {
   color: #fff;     /* 文字色     */
   line-height: 1em;         /* 1行の高さ  */
   transition: .3s;         /* なめらか変化 */
+  text-decoration: none;
 }
 
 .header-inner a:hover {
@@ -60,7 +67,7 @@ header {
   padding-top: 250px;
 }
 
-.title h2{
+.title h2 {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
@@ -72,24 +79,19 @@ header {
   width: auto;
   background: #74cfae;
   color: #fff;
-  position: relative;
 }
 
-.what-inner {
+.phone {
   width: 1100px;
   margin: 0 auto;
-  position: absolute;
-  right: -50px;
-}
-
-.what a img {
+  display: flex;
+  justify-content: space-around;
   padding-top: 50px;
-  padding-left: 120px;
+  padding-left: 100px;
 }
 
 .what h3 {
   font-size: 24px;
-  padding-top: 60px;
   text-align: center;
 }
 
@@ -164,6 +166,7 @@ article p {
   transition: .3s;         /* なめらか変化 */
   border: 2px solid #74cfae;    /* 枠の指定 */
   margin-left: 90px;
+  text-decoration: none;
 }
 
 .email:hover {
