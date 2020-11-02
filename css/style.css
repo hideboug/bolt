@@ -5,24 +5,28 @@ body {
   min-width:100vh;
 }
 
-.what h3,
-article h4 {
+.what h2,
+article h2 {
   font-family: "Raleway";
+}
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
 }
 
 header {
   background: #fff;
-  width: auto;
+  position: fixed;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .header-inner {
   background: #fff;
-  width: 1100px;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .header-inner i {
@@ -50,11 +54,11 @@ header {
   width: auto;
   background: #f2f2f2;
   text-align: center;
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 .title-inner {
-  width: 1100px;
-  margin: 0 auto;
   font-size: 30px;
   color: #c0c0c0;
 }
@@ -64,14 +68,12 @@ header {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
-  padding-top: 250px;
 }
 
 .title h2 {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
-  padding-bottom: 250px;
 }
 
 
@@ -79,6 +81,8 @@ header {
   width: auto;
   background: #74cfae;
   color: #fff;
+  padding-top: 50px;
+  padding-left: 100px;
 }
 
 .phone {
@@ -86,11 +90,9 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  padding-top: 50px;
-  padding-left: 100px;
 }
 
-.what h3 {
+.what h2 {
   font-size: 24px;
   text-align: center;
 }
@@ -105,23 +107,24 @@ article {
   width: auto;
   color: #4e4e4e;
   background: #f2f2f2;
+  padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .article-inner {
-  width: 1100px;
-  margin: 0 auto;
   position: relative;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .container > a {
-  margin-right: 100px;
-  margin-bottom: 80px;
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   opacity: .7;
   transition: .3s;
 }
@@ -130,14 +133,12 @@ article {
   opacity: 1;
 }
 
-.container > a:nth-child( 3n ) {
-  margin-right: 0;
+.container > a:nth-child( 1n ) {
+  margin-left: 0;
 }
 
-article h4 {
+article h2 {
   font-size: 24px;
-  padding-top: 60px;
-  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -145,9 +146,7 @@ article h4 {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-top: 90px;
-  padding-bottom: 70px;
-
+  margin-top: 50px;
 }
 
 article p {
@@ -177,18 +176,13 @@ article p {
   background: #4e4e4e;
   color: #fff;
   width: auto;
-}
-
-.skills-inner {
-  width: 1100px;
-  margin: 0 auto;
+  padding-top: 70px;
   padding-bottom: 100px;
 }
 
-.skills h5 {
+.skills h2 {
   font-size: 24px;
-  padding-top: 70px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -200,11 +194,11 @@ article p {
 }
 
 .box > .pic_frame {
-  margin-right: 180px;
+  margin-left: 180px;
 }
 
-.box > .pic_frame:nth-child( 4n ) {
-  margin-right: 0;
+.box > .pic_frame:nth-child( 1n ) {
+  margin-left: 0;
 }
 
 .pic_frame p {
@@ -214,15 +208,13 @@ article p {
 nav {
   width: auto;
   background: #f2f2f2;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .btn-inner {
-  width: 1100px;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 nav i {
@@ -246,12 +238,10 @@ footer {
   background: #74cfae;
   color: #fff;
   width: auto;
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
 footer .inner {
-  width: 1100px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 25px;
   text-align: right;
 }
