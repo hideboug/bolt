@@ -5,8 +5,10 @@ body {
   min-width:100vh;
 }
 
+.title h1,
 .what h2,
-article h2 {
+article h2,
+.skills h2 {
   font-family: "Raleway";
 }
 
@@ -17,6 +19,7 @@ article h2 {
 
 header {
   background: #fff;
+  z-index:100;
   position: fixed;
   width: 100%;
   padding-top: 15px;
@@ -70,7 +73,7 @@ header {
   color: #74cfae;
 }
 
-.title h2 {
+.title p {
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
@@ -85,7 +88,7 @@ header {
   padding-left: 100px;
 }
 
-.phone {
+.what-inner {
   width: 1100px;
   margin: 0 auto;
   display: flex;
@@ -95,15 +98,15 @@ header {
 .what h2 {
   font-size: 24px;
   text-align: center;
+  padding-bottom: 35px;
 }
 
 .what p {
   font-size: 20px;
-  margin-top: 35px;
   text-align: center;
 }
 
-article {
+.our {
   width: auto;
   color: #4e4e4e;
   background: #f2f2f2;
@@ -111,20 +114,23 @@ article {
   padding-bottom: 70px;
 }
 
-.article-inner {
+.our-inner {
   position: relative;
 }
 
+.our h2 {
+  font-size: 24px;
+  text-align: center;
+}
+
 .container {
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .container > a {
-  margin-left: 100px;
-  margin-top: 40px;
-  margin-bottom: 40px;
   opacity: .7;
   transition: .3s;
 }
@@ -133,23 +139,18 @@ article {
   opacity: 1;
 }
 
-.container > a:nth-child( 1n ) {
-  margin-left: 0;
-}
-
-article h2 {
-  font-size: 24px;
-  text-align: center;
+.container > a:nth-child( n+4 ) {
+  margin-top: 80px;
 }
 
 .text-button {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
-article p {
+.our p {
   font-size: 18px;
   text-align: center;
 }
@@ -182,30 +183,22 @@ article p {
 
 .skills h2 {
   font-size: 24px;
-  margin-bottom: 40px;
   text-align: center;
 }
 
 .box {
+  margin-top: 40px;
   display: flex;
   justify-content: space-around;
   text-align: center;
   font-size: 16px;
 }
 
-.box > .pic_frame {
-  margin-left: 180px;
-}
-
-.box > .pic_frame:nth-child( 1n ) {
-  margin-left: 0;
-}
-
 .pic_frame p {
   margin-top: 10px;
 }
   
-nav {
+.btn {
   width: auto;
   background: #f2f2f2;
   padding-top: 200px;
@@ -217,7 +210,7 @@ nav {
   justify-content: center;
 }
 
-nav i {
+.btn a {
   font-size: 30px;
   color: #74cfae;
   cursor: pointer;
@@ -230,7 +223,7 @@ nav i {
   text-align: center;
 }
 
-nav i:hover {
+nav a:hover {
   background: #ffffff;
 }
 
@@ -242,6 +235,8 @@ footer {
   padding-bottom: 25px;
 }
 
-footer .inner {
+footer p {
+  margin: 0 auto;
+  width: 1100px;
   text-align: right;
 }
