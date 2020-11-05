@@ -38,13 +38,12 @@ header {
 }
 
 .header-inner a {
-  font-size: 12pt;        /* 文字サイズ */
+  font-size: 12px;        /* 文字サイズ */
   text-align: center;      /* 文字位置   */
   cursor: pointer;     /* カーソル   */
   padding: 14px 12px;   /* 余白       */
   background: #74cfae;     /* 背景色     */
   color: #fff;     /* 文字色     */
-  line-height: 1em;         /* 1行の高さ  */
   transition: .3s;         /* なめらか変化 */
   text-decoration: none;
 }
@@ -95,15 +94,18 @@ header {
   justify-content: space-around;
 }
 
+.phone {
+  text-align: center;
+}
+
 .what h2 {
   font-size: 24px;
-  text-align: center;
-  padding-bottom: 35px;
 }
 
 .what p {
+  margin-top: 35px;
   font-size: 20px;
-  text-align: center;
+  white-space: pre;
 }
 
 .our {
@@ -151,20 +153,19 @@ header {
 }
 
 .our p {
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
+  white-space: pre;
 }
 
 .email {
-  font-size: 12pt;        /* 文字サイズ */
+  font-size: 12px;        /* 文字サイズ */
   text-align: center;      /* 文字位置   */
   cursor: pointer;     /* カーソル   */
   padding: 14px 20px;   /* 余白       */
   background: #74cfae;     /* 背景色     */
   color: #fff;     /* 文字色     */
-  line-height: 1em;         /* 1行の高さ  */
   transition: .3s;         /* なめらか変化 */
-  border: 2px solid #74cfae;    /* 枠の指定 */
   margin-left: 90px;
   text-decoration: none;
 }
@@ -198,32 +199,30 @@ header {
   margin-top: 10px;
 }
   
-.btn {
+.sns {
   width: auto;
   background: #f2f2f2;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.btn-inner {
+.sns-inner {
   display: flex;
   justify-content: center;
 }
 
-.btn a {
-  font-size: 30px;
+.sns a {
+  font-size: 40px;
   color: #74cfae;
   cursor: pointer;
-  padding: 14px 0;   /* 余白       */
+  padding: 36px 0;   /* 余白       */
   background: #f2f2f2;     /* 背景色     */
-     /* 文字色     */
-  line-height: 1em;         /* 1行の高さ  */
   transition: .3s;         /* なめらか変化 */
   width: 185px;
   text-align: center;
 }
 
-nav a:hover {
+.sns a:hover {
   background: #ffffff;
 }
 
