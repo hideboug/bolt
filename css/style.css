@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
+img {
+  vertical-align: bottom;
+}
+
 body {
   font-family: "Lato";
-  min-width:100vh;
 }
 
 .title h1,
@@ -12,230 +15,529 @@ article h2,
   font-family: "Raleway";
 }
 
-.inner {
-  width: 1100px;
-  margin: 0 auto;
+.clearfix::after {
+  content:"";
+  clear:both;
+  display:block;
 }
 
 header {
-  background: #fff;
+  background-color:#fff;
+  width:100%;
+  position:fixed;
+  top:0px;
   z-index:100;
-  position: fixed;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .header-inner {
-  background: #fff;
-  display: flex;
-  justify-content: space-between;
+  padding:15px 0px;
 }
+
 
 .header-inner i {
-  color: #4e4e4e;
-  font-size: 30px;
-}
-
-.header-inner a {
-  font-size: 12px;        /* 文字サイズ */
-  text-align: center;      /* 文字位置   */
-  cursor: pointer;     /* カーソル   */
-  padding: 14px 12px;   /* 余白       */
-  background: #74cfae;     /* 背景色     */
-  color: #fff;     /* 文字色     */
-  transition: .3s;         /* なめらか変化 */
-  text-decoration: none;
+  float:left;
+  font-size:3em;
 }
 
 .header-inner a:hover {
-  color: #333;     /* 背景色     */
-}
-
-.title {
-  width: auto;
-  background: #f2f2f2;
-  text-align: center;
-  padding-top: 250px;
-  padding-bottom: 250px;
-}
-
-.title-inner {
-  font-size: 30px;
-  color: #c0c0c0;
-}
-
-
-.title h1 {
-  font-size: 90px;
-  font-weight: 700;
-  color: #74cfae;
+  color:#333;
 }
 
 .title p {
-  font-size: 30px;
-  color: #c0c0c0;
-  margin-top: 20px;
+  color:#c0c0c0;
+  font-size:30px;
+  margin:0 auto;
+  text-align:center;
 }
 
 
 .what {
-  width: auto;
-  background: #74cfae;
-  color: #fff;
-  padding-top: 50px;
-  padding-left: 100px;
-}
-
-.what-inner {
-  width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-}
-
-.phone {
-  text-align: center;
+  background-color:#74cfae;
+  width:100%;
 }
 
 .what h2 {
-  font-size: 24px;
-}
-
-.what p {
-  margin-top: 35px;
-  font-size: 20px;
-  white-space: pre-line;
+  font-size:24px;
+  margin-bottom:35px;
 }
 
 .our {
-  width: auto;
-  color: #4e4e4e;
-  background: #f2f2f2;
-  padding-top: 60px;
-  padding-bottom: 70px;
+  width:100%;
+  background-color:#f2f2f2;
+  color:#333;
 }
 
 .our-inner {
-  position: relative;
+  padding:60px 0px 70px;
 }
 
 .our h2 {
-  font-size: 24px;
-  text-align: center;
+  font-size:24px;
+  margin-bottom:40px;
+  text-align:center;
 }
 
-.container {
-  margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.email_btn:hover {
+  color:#333;
 }
 
-.container > a {
-  opacity: .7;
-  transition: .3s;
-}
-
-.container > a:hover {
-  opacity: 1;
-}
-
-.container > a:nth-child( n+4 ) {
-  margin-top: 80px;
-}
-
-.text-button {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 90px;
-}
-
-.our p {
-  font-size: 16px;
-  text-align: center;
-  white-space: pre-line;
-}
-
-.email {
-  font-size: 12px;        /* 文字サイズ */
-  text-align: center;      /* 文字位置   */
-  cursor: pointer;     /* カーソル   */
-  padding: 14px 20px;   /* 余白       */
-  background: #74cfae;     /* 背景色     */
-  color: #fff;     /* 文字色     */
-  transition: .3s;         /* なめらか変化 */
-  margin-left: 90px;
-  text-decoration: none;
-}
-
-.email:hover {
-  color:  #333;    /* 背景色     */
+.our-image:hover {
+  opacity:1;
 }
 
 .skills {
-  background: #4e4e4e;
-  color: #fff;
-  width: auto;
-  padding-top: 70px;
-  padding-bottom: 100px;
+  width:100%;
+  background-color:#4e4e4e;
+}
+
+.skills-inner {
+  padding:70px 0px 100px;
 }
 
 .skills h2 {
-  font-size: 24px;
-  text-align: center;
+  color:#fff;
+  margin-bottom:70px;
+  text-align:center;
+  font-size:24px;
 }
 
-.box {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  font-size: 16px;
+.box p {
+  text-align:center;
+  margin-top:20px;
 }
 
-.pic_frame p {
-  margin-top: 10px;
-}
-  
 .sns {
-  width: auto;
-  background: #f2f2f2;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  width:100%;
+  background-color:#f2f2f2;
 }
 
-.sns-inner {
-  display: flex;
-  justify-content: center;
-}
-
-.sns a {
-  font-size: 40px;
-  color: #74cfae;
-  cursor: pointer;
-  padding: 36px 0;   /* 余白       */
-  background: #f2f2f2;     /* 背景色     */
-  transition: .3s;         /* なめらか変化 */
-  width: 185px;
-  text-align: center;
-}
-
-.sns a:hover {
-  background: #ffffff;
+.sns-box a:hover {
+  background-color:#fff;
 }
 
 footer {
-  background: #74cfae;
-  color: #fff;
-  width: auto;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  background-color:#74cfae;
+  padding:20px 0 25px;
 }
 
 footer p {
-  margin: 0 auto;
-  width: 1100px;
-  text-align: right;
+  color:#fff;
+  text-align:right;
+}
+
+@media screen and (max-width: 768px) {
+  /* 768px以下に適用されるCSS（スマホ用） */
+
+  .inner {
+    margin:0 auto;
+    width:97%;
+  }
+
+  .header-contact {
+    display: inline-block;
+    padding: 10px;
+    border:1px solid #ddd;
+    border-radius:4px;
+    float: right;
+  }
+
+  .header-contact::before {
+  	content:'\f0c9';
+  	font-family:'Font Awesome 5 Free';
+  	font-weight:900;
+  }
+
+  .header-inner a {
+    display: none;
+  }
+
+  .title {
+    background-color:#f2f2f2;
+    width:100%;
+    margin-top:78px;
+  }
+
+  .title-inner {
+    padding:160px 0px 130px;
+  }
+
+  .title h1 {
+    color:#74cfae;
+    font-weight:700;
+    font-size:80px;
+    margin-bottom:20px;
+    margin:0 auto;
+    text-align:center;
+  }
+
+  .what-inner {
+    padding:50px 0 25px;
+  }
+
+  .what-inner-image {
+    width:100%;
+    text-align:center;
+  }
+
+  .phone {
+    box-sizing:border-box;
+    width:80%;
+    color:#fff;
+    margin:20px auto 0px;
+    text-align:center;
+  }
+
+  .phone-text {
+    font-size:20px;
+  }
+  
+  .text-button {
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .text-button_text {
+    box-sizing:border-box;
+    width:80%;
+    margin:0 auto;
+  }
+  
+  .email {
+    display:block;
+    margin:40px auto 0;
+    font-size:12px;
+  }
+
+  .email_btn {
+    display:inline-block;
+    background-color:#74cfae;
+    color:#fff;
+    padding:14px 20px;
+    text-decoration:none;
+    transition-duration:0.3s;
+  }
+
+  .container {
+    width:300px;
+    margin:0 auto;
+  }
+  
+  .our-image {
+    display:block;
+    opacity:0.7;
+    transition-duration:0.3s;
+  }
+
+  .our-image:nth-child(3) {
+    margin-bottom:80px;
+  }
+  
+  .box {
+    width:100%;
+    text-align:center;
+  }
+  
+  .pic_frame {
+    color:#fff;
+    font-size:16px;
+    margin-top:88px;
+  }
+
+  .pic_frame:first-child {
+    margin-top: 0px;
+  }
+  
+  .sns-inner {
+    box-sizing:border-box;
+    width:100%;
+    padding:50px 15px;
+  }
+
+  .sns-box {
+    width:100%;
+  }
+  
+  .sns a {
+    display:inline-block;
+    text-align:center;
+    color:#74cfae;
+    font-size:40px;
+    width:100%;
+    transition-duration:0.3s;
+    padding:20px 0px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+  /* 1199px以下に適用されるCSS（タブレット用） */
+  .inner {
+    margin:0 auto;
+    width:97%;
+  }
+
+  .header-contact {
+    background-color:#74cfae;
+    color:#fff;
+    float:right;
+    font-size:12px;
+  }
+
+  .header-contact a {
+    display:block;
+    text-decoration:none;
+    color:#fff;
+    transition-duration:0.3s;
+    padding:14px 12px;
+  }
+
+  .title {
+    background-color:#f2f2f2;
+    width:100%;
+    margin-top:78px;
+    padding:250px 0px;
+  }
+
+  .title h1 {
+    color:#74cfae;
+    font-size:90px;
+    font-weight:700;
+    margin:0 auto;
+    margin-bottom:20px;
+    text-align:center;
+  }
+
+  .what-inner {
+    padding:50px 0 25px;
+  }
+
+  .what-inner-image {
+    width:100%;
+    text-align:center;
+  }
+
+  .phone {
+    box-sizing:border-box;
+    color:#fff;
+    width:80%;
+    text-align:center;
+    margin:20px auto 0;
+  }
+
+  .phone-text {
+    font-size:20px;
+  }
+
+  .text-button {
+    margin-top:80px;
+    text-align:center;
+  }
+
+  .text-button_text {
+    box-sizing:border-box;
+    width:80%;
+    margin:0 auto;
+  }
+
+  .email {
+    display:block;
+    margin:40px auto 0;
+    font-size:12px;
+  }
+
+  .email_btn {
+    display:inline-block;
+    background-color:#74cfae;
+    color:#fff;
+    padding:14px 20px;
+    text-decoration:none;
+    transition-duration:0.3s;
+  }
+
+  .container {
+    width:300px;
+    margin:0 auto;
+  }
+
+  .our-image {
+    display:block;
+    opacity:0.7;
+    transition-duration:0.3s;
+  }
+
+  .our-image:nth-child(3) {
+    margin-bottom:80px;
+  }
+
+  .box {
+    width:100%;
+    text-align:center;
+  }
+
+  .pic_frame {
+    color:#fff;
+    font-size:16px;
+    margin-top:88px;
+  }
+
+  .pic_frame:first-child {
+    margin-top:0px;
+  }
+
+  .sns-inner {
+    padding:200px 0px;
+  }
+
+  .sns-box {
+    display:flex;
+    justify-content:center;
+  }
+
+  .sns-inner a {
+    text-align:center;
+    font-size:40px;
+    width:185px;
+    transition-duration:0.3s;
+    padding:20px 0px;
+    color:#74cfae;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* 1200px以上に適用されるCSS（PC用） */
+  .inner {
+    margin:0 auto;
+    width:1100px;
+  }
+
+  .header-contact {
+    background-color:#74cfae;
+    color:#fff;
+    float:right;
+    font-size:12px;
+  }
+
+  .header-contact a {
+    display:block;
+    text-decoration:none;
+    color:#fff;
+    transition-duration:0.3s;
+    padding:14px 12px;
+  }
+
+  .title {
+    background-color:#f2f2f2;
+    width:100%;
+    margin-top:78px;
+    padding:250px 0px;
+  }
+
+  .title h1 {
+    color:#74cfae;
+    font-size:90px;
+    font-weight:700;
+    margin:0 auto;
+    margin-bottom:20px;
+    text-align:center;
+  }
+
+  .what-inner {
+    padding-top:50px;
+  }
+
+  .what-inner-image {
+    float:left;
+    width:400px;
+    text-align:center;
+  }
+
+  .phone {
+    box-sizing:border-box;
+    color:#fff;
+    float:right;
+    width:700px;
+    padding:20px 0px 0px;
+    text-align:center;
+  }
+
+  .phone-text {
+    display:inline-block;
+    font-size:20px;
+    width:600px;
+  }
+
+  .our-image {
+    float:left;
+    margin:80px 0px 0px 100px;
+    opacity:0.7;
+    transition-duration:0.3s;
+  }
+
+  .our-image:nth-child(3n+1) {
+    margin-left:0px;
+  }
+
+  .our-image:nth-child(-n+3) {
+    margin-top:0px;
+  }
+
+  .text-button {
+    box-sizing:border-box;
+    margin-top:90px;
+    text-align:center;
+  }
+
+  .text-button_text {
+    float:left;
+    width:700px;
+    padding:0px 90px;
+  }
+
+  .email {
+    background-color:#74cfae;
+    display:block;
+    float:left;
+    font-size:12px;
+  }
+
+  .email_btn {
+    color:#fff;
+    display:block;
+    padding:14px 20px;
+    text-decoration:none;
+    transition-duration:0.3s;
+  }
+
+  .box {
+    display:flex;
+    justify-content:center;
+  }
+
+  .pic_frame {
+    color:#fff;
+    float:left;
+    font-size:16px;
+    margin-left:180px;
+  }
+
+  .pic_frame:first-child {
+    margin-left:0px;
+  }
+
+  .sns-inner {
+    padding:200px 0px;
+  }
+
+  .sns-box {
+    display:flex;
+    justify-content:center;
+  }
+
+  .sns-box a {
+    text-align:center;
+    color:#74cfae;
+    font-size:40px;
+    width:185px;
+    transition-duration:0.3s;
+    padding:20px 0px;
+  }
 }
